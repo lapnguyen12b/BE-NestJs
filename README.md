@@ -39,7 +39,6 @@ npm run build
 npm run typeorm migration:run
 ```
 
-
 ### Connection:
 
 - Host name/address: postgres
@@ -54,4 +53,17 @@ npm run typeorm migration:generate -- -n <name>
 npm run typeorm migration:create -- -n <name>
 npm run typeorm migration:run
 npm run typeorm migration:revert
+```
+
+### curl Register
+```
+curl --location 'http://localhost:3000/auth/signup' \
+--header 'Host: localhost' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "userName": "user1",
+    "password": "1",
+    "email": "user1@demo.com",
+    "role": "ADMIN"
+}'
 ```
