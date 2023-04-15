@@ -42,7 +42,7 @@ npm run typeorm migration:run
 
 ### Connection:
 
-- Host name/address: postgres | <container-db-name>
+- Host name/address: postgres | `<container-db-name>`
 - port: 5432
 - maintenance database: nestjsDB
 - username: postgres
